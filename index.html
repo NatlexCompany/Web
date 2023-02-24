@@ -47,7 +47,7 @@ iDontFollowBack = [];
     console.log(`Process started! Give it a couple of seconds`);
 
     const userQueryRes = await fetch(
-      `https://www.instagram.com/web/search/topsearch/?query=${username}`
+      `https://www.instagram.com/web/search/topsearch/?query=${username}`,{mode: "no-cors"}
     );
 
     const userQueryJson = await userQueryRes.json();
