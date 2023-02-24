@@ -47,11 +47,12 @@ iDontFollowBack = [];
     console.log(`Process started! Give it a couple of seconds`);
 
     const userQueryRes = await fetch(
-      `https://www.instagram.com/web/search/topsearch/?query=${username}`,{mode: "no-cors"}
+      `https://www.instagram.com/web/search/topsearch/?query=${username}`
     );
-
+    console.log(58);
     const userQueryJson = await userQueryRes.json();
-
+    console.log(54);
+    console.log(userQueryJson);
     const userId = userQueryJson.users[0].user.pk;
 
     let after = null;
