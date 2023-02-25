@@ -13,6 +13,18 @@
         <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     </head>
     <body>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '579323617446674',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v16.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+          
         <!-- Banner Section -->
         <div class="banner" id="banner"></div>
         <div class="bannerText">
@@ -24,7 +36,10 @@
                 <span style="--i:5">E</span>
                 <span style="--i:6">X</span>
             </div>
-        </div>
+            <div id="fb-root"></div>
+              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=579323617446674&autoLogAppEvents=1" nonce="5h7p1xp1"></script>
+              <div class="fb-login-button" data-width="" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            </div>
 
 <script>
 const username = "alexandracange_";
